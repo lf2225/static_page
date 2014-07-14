@@ -1,0 +1,42 @@
+Generated at Thu Jul 10 02:30:19 -0700 2014
+Chef::Exceptions::FileNotFound: cookbook_file[/usr/static_page.html] (nginx::default line 21) had an error: Chef::Exceptions::FileNotFound: Cookbook 'nginx' (0.1.0) does not contain a file at any of these locations:
+  files/ubuntu-12.04/static_page.html
+  files/ubuntu/static_page.html
+  files/default/static_page.html
+
+This cookbook _does_ contain: ['/usr/static_page/cookbooks/nginx/files/default/exercise-webpage/.git/info/exclude','/usr/static_page/cookbooks/nginx/files/default/exercise-webpage/.git/HEAD','/usr/static_page/cookbooks/nginx/files/default/exercise-webpage/.git/objects/a5/1471747e62e68e4d4fa9f8d36d3530255e126d','/usr/static_page/cookbooks/nginx/files/default/exercise-webpage/.git/objects/d8/a5bfa01258d64e8139b7459ce8e0e74cff342d','/usr/static_page/cookbooks/nginx/files/default/exercise-webpage/.git/index','/usr/static_page/cookbooks/nginx/files/default/exercise-webpage/.git/config','/usr/static_page/cookbooks/nginx/files/default/exercise-webpage/.git/objects/6e/adbe200f298eb59931952e44a994e74c1e1bdf','/usr/static_page/cookbooks/nginx/files/default/exercise-webpage/.git/hooks/applypatch-msg.sample','/usr/static_page/cookbooks/nginx/files/default/exercise-webpage/.git/description','/usr/static_page/cookbooks/nginx/files/default/exercise-webpage/.git/logs/refs/heads/master','/usr/static_page/cookbooks/nginx/files/default/exercise-webpage/.git/hooks/prepare-commit-msg.sample','/usr/static_page/cookbooks/nginx/files/default/exercise-webpage/.git/objects/fc/f1520abac4871fcaff88072fed24e1b88a5a96','/usr/static_page/cookbooks/nginx/files/default/exercise-webpage/.git/objects/c2/27c0c4e8b4ad7867afae3588f84dee5e2525b3','/usr/static_page/cookbooks/nginx/files/default/exercise-webpage/.git/objects/e6/9de29bb2d1d6434b8b29ae775ad8c2e48c5391','/usr/static_page/cookbooks/nginx/files/default/exercise-webpage/.git/hooks/commit-msg.sample','/usr/static_page/cookbooks/nginx/files/default/exercise-webpage/.git/hooks/update.sample','/usr/static_page/cookbooks/nginx/files/default/exercise-webpage/.git/hooks/pre-commit.sample','/usr/static_page/cookbooks/nginx/files/default/exercise-webpage/.git/objects/d7/034b5f3c68dce119a4f96c9fb26b99e6d2c7e9','/usr/static_page/cookbooks/nginx/files/default/exercise-webpage/.git/logs/HEAD','/usr/static_page/cookbooks/nginx/files/default/exercise-webpage/.git/refs/remotes/origin/HEAD','/usr/static_page/cookbooks/nginx/files/default/exercise-webpage/.git/packed-refs','/usr/static_page/cookbooks/nginx/files/default/exercise-webpage/.git/hooks/post-update.sample','/usr/static_page/cookbooks/nginx/files/default/exercise-webpage/index.html','/usr/static_page/cookbooks/nginx/files/default/exercise-webpage/.git/refs/heads/master','/usr/static_page/cookbooks/nginx/files/default/exercise-webpage/.git/objects/54/3b9bebdc6bd5c4b22136034a95dd097a57d3dd','/usr/static_page/cookbooks/nginx/files/default/exercise-webpage/.git/hooks/pre-applypatch.sample','/usr/static_page/cookbooks/nginx/files/default/exercise-webpage/.git/hooks/pre-rebase.sample','/usr/static_page/cookbooks/nginx/files/default/exercise-webpage/.git/objects/b1/e136ba96a8e2567556eb5b14902ef51b098ace','/usr/static_page/cookbooks/nginx/files/default/exercise-webpage/.git/objects/56/7e4ecc7c3d5b88dc57022ed445058bb037f622']
+/var/lib/gems/1.8/gems/chef-11.12.8/bin/../lib/chef/cookbook_version.rb:311:in `preferred_manifest_record'
+/var/lib/gems/1.8/gems/chef-11.12.8/bin/../lib/chef/cookbook_version.rb:319:in `preferred_filename_on_disk_location'
+/var/lib/gems/1.8/gems/chef-11.12.8/bin/../lib/chef/provider/cookbook_file/content.rb:31:in `file_for_provider'
+/var/lib/gems/1.8/gems/chef-11.12.8/bin/../lib/chef/file_content_management/content_base.rb:40:in `tempfile'
+/var/lib/gems/1.8/gems/chef-11.12.8/bin/../lib/chef/provider/file.rb:411:in `tempfile'
+/var/lib/gems/1.8/gems/chef-11.12.8/bin/../lib/chef/provider/file.rb:350:in `do_contents_changes'
+/var/lib/gems/1.8/gems/chef-11.12.8/bin/../lib/chef/provider/file.rb:121:in `action_create'
+/var/lib/gems/1.8/gems/chef-11.12.8/bin/../lib/chef/provider.rb:120:in `send'
+/var/lib/gems/1.8/gems/chef-11.12.8/bin/../lib/chef/provider.rb:120:in `run_action'
+/var/lib/gems/1.8/gems/chef-11.12.8/bin/../lib/chef/resource.rb:637:in `run_action'
+/var/lib/gems/1.8/gems/chef-11.12.8/bin/../lib/chef/runner.rb:49:in `run_action'
+/var/lib/gems/1.8/gems/chef-11.12.8/bin/../lib/chef/runner.rb:81:in `converge'
+/var/lib/gems/1.8/gems/chef-11.12.8/bin/../lib/chef/runner.rb:81:in `each'
+/var/lib/gems/1.8/gems/chef-11.12.8/bin/../lib/chef/runner.rb:81:in `converge'
+/var/lib/gems/1.8/gems/chef-11.12.8/bin/../lib/chef/resource_collection.rb:98:in `execute_each_resource'
+/var/lib/gems/1.8/gems/chef-11.12.8/bin/../lib/chef/resource_collection/stepable_iterator.rb:116:in `call'
+/var/lib/gems/1.8/gems/chef-11.12.8/bin/../lib/chef/resource_collection/stepable_iterator.rb:116:in `call_iterator_block'
+/var/lib/gems/1.8/gems/chef-11.12.8/bin/../lib/chef/resource_collection/stepable_iterator.rb:85:in `step'
+/var/lib/gems/1.8/gems/chef-11.12.8/bin/../lib/chef/resource_collection/stepable_iterator.rb:104:in `iterate'
+/var/lib/gems/1.8/gems/chef-11.12.8/bin/../lib/chef/resource_collection/stepable_iterator.rb:55:in `each_with_index'
+/var/lib/gems/1.8/gems/chef-11.12.8/bin/../lib/chef/resource_collection.rb:96:in `execute_each_resource'
+/var/lib/gems/1.8/gems/chef-11.12.8/bin/../lib/chef/runner.rb:80:in `converge'
+/var/lib/gems/1.8/gems/chef-11.12.8/bin/../lib/chef/client.rb:345:in `converge'
+/var/lib/gems/1.8/gems/chef-11.12.8/bin/../lib/chef/client.rb:431:in `do_run'
+/var/lib/gems/1.8/gems/chef-11.12.8/bin/../lib/chef/client.rb:213:in `run'
+/var/lib/gems/1.8/gems/chef-11.12.8/bin/../lib/chef/client.rb:207:in `fork'
+/var/lib/gems/1.8/gems/chef-11.12.8/bin/../lib/chef/client.rb:207:in `run'
+/var/lib/gems/1.8/gems/chef-11.12.8/bin/../lib/chef/application.rb:217:in `run_chef_client'
+/var/lib/gems/1.8/gems/chef-11.12.8/bin/../lib/chef/application/solo.rb:221:in `run_application'
+/var/lib/gems/1.8/gems/chef-11.12.8/bin/../lib/chef/application/solo.rb:213:in `loop'
+/var/lib/gems/1.8/gems/chef-11.12.8/bin/../lib/chef/application/solo.rb:213:in `run_application'
+/var/lib/gems/1.8/gems/chef-11.12.8/bin/../lib/chef/application.rb:67:in `run'
+/var/lib/gems/1.8/gems/chef-11.12.8/bin/chef-solo:25
+/usr/local/bin/chef-solo:19:in `load'
+/usr/local/bin/chef-solo:19

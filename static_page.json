@@ -1,0 +1,10 @@
+{
+  "run_list" : [
+    "recipe[nginx]"
+  ],
+  "nginx" : {
+    "worker_processes" : 2,
+    "server_name" : "puppet static page"
+  }
+}
+
